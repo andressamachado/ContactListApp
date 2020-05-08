@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--  match_parent:  Fill attribute according to its parent. In that case, the screen -->
+<!--  wrap_content:  Grows based on its content -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+<!--    Button to add a new contact -->
+<!--    layout_alignParentEnd: modify the component based on the relative layout-->
+<!--    dp: Density-independent Pixel. We use this unit to maintain the layout across different screens-->
+<!--    focusable: gives the ability to interact to the app with the keyboard-->
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/activity_contact_list_fab_new_contact"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:fabSize="normal"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="16dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:src="@drawable/ic_action_new_contact"
+        app:backgroundTint="#FA117A"/>
+
+    <ListView
+        android:id="@+id/activity_contact_list_listview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</RelativeLayout>
+
+

@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Agenda</string>
+    <string name="name">Name</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="e_mail">E-mail</string>
+    <string name="remove">Remove</string>
+    <string name="test">Test</string>
+    <string name="save_new_contact">save new contact</string>
+</resources>
